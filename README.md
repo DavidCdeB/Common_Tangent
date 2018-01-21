@@ -21,7 +21,7 @@ https://stackoverflow.com/questions/8592200/mathematica-tangent-of-two-curves
 
 1) Does this work for this case:
 
-![Data flow](https://github.com/DavidCdeB/Common_Tangent/blob/master/Images_for_README_md/plots_names.png)
+![Data flow](https://github.com/DavidCdeB/Common_Tangent/blob/master/Images_for_README_md/plots.png)
 
 where `f(x)` and `g(x)` are cubic? (`1.dat` and `2.dat` Energy vs Volume files provided in this repository). 
 
