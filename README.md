@@ -40,7 +40,7 @@ def BM(x, a, b, c, d):
 def devBM(x, b, c, d):
          return  b + 2*c*x + 3*d*x**2
 
- from scipy.optimize import fsolve
+from scipy.optimize import fsolve
 def equations(p):
     x1, x2 = p
     E1 = devBM(x1, popt_C_I[1], popt_C_I[2], popt_C_I[3]) - devBM(x2, popt_14[1], popt_14[2], popt_14[3])
@@ -70,6 +70,7 @@ print ' slope_common_tangent_GPa = ', slope_common_tangent_GPa
 Which yields:
 
 > slope_common_tangent =  -0.000438955769096
+
 > slope_common_tangent_GPa =  1.91373662419
 
 We know that the common tangent passes through the `x1` point, and we know its slope. Thus, we can use the following equation:
@@ -85,10 +86,15 @@ Since:
 
 then the common tangent equation is:
 
-    def comm_tangent(x, x1, slope_common_tangent):
-       return BM(x1, popt_C_I[0], popt_C_I[1], popt_C_I[2], popt_C_I[3]) - slope_common_tangent * x1 + slope_common_tangent * x         
+```
+def comm_tangent(x, x1, slope_common_tangent):
+   return BM(x1, popt_C_I[0], popt_C_I[1], popt_C_I[2], popt_C_I[3]) - slope_common_tangent * x1 + slope_common_tangent * x
+```
+```
+x = var('x')
+print comm_tangent(x, x1, slope_common_tangent)
+```
+> Common tangent equation: -0.000438955769095521*x - 941.227540709767
 
-If we plot it:
-
-![Data flow](https://github.com/DavidCdeB/Common_Tangent/blob/master/Images_for_README_md/common_tang.png)
+![Data flow](https://github.com/DavidCdeB/Common_Tangent/blob/master/Images_for_README_md/slope.png)
 
