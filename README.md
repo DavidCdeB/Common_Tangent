@@ -25,4 +25,4 @@ https://stackoverflow.com/questions/8592200/mathematica-tangent-of-two-curves
 
 where `f(x)` and `g(x)` are cubic? (`1.dat` and `2.dat` Energy vs Volume files provided in this repository). 
 
-2) I have implemented this in python (`Common_tangent.py`) file but unfortunately no solution is found
+2) I have implemented this in python (`Common_tangent.py` file) but unfortunately no solution is found
