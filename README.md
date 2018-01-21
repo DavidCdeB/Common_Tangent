@@ -14,3 +14,4 @@ So that in the end we have a system of 2 equations with 2 unknowns:
 f'(x1) = g'(x2) # Eq. 1
 (f(x1) - g(x2)) / (x1 - x2) = f'(x1) # Eq. 2
 ```
+We would 
