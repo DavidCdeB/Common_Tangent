@@ -34,27 +34,43 @@ Perhaps in this extrapolated version is easier to see that there is a common tan
 2) I have solved Eqn 1 and E1n 2 in python (`Common_tangent.py` file): 
 
 ```
-    def F(x):
-        x1, x2 = x[0], x[1]
-        E1 = P(x1, popt_C_I[1], popt_C_I[2], popt_C_I[3]) - P(x2, popt_14[1], popt_14[2], popt_14[3])
-        E2 = ((BM(x1, popt_C_I[0], popt_C_I[1], popt_C_I[2], popt_C_I[3]) - BM(x2, popt_14[0], popt_14[1], popt_14[2], popt_14[3])) / (x1 - x2)) - P(x1, popt_C_I[1], popt_C_I[2], popt_C_I[3])
-        return [E1, E2]
-    
-    print fsolve(F, [50, 60])    # some reasonable initial point
+def BM(x, a, b, c, d):
+         return  a + b*x + c*x**2 + d*x**3
+
+def devBM(x, b, c, d):
+         return  b + 2*c*x + 3*d*x**2
+
+ from scipy.optimize import fsolve
+def equations(p):
+    x1, x2 = p
+    E1 = devBM(x1, popt_C_I[1], popt_C_I[2], popt_C_I[3]) - devBM(x2, popt_14[1], popt_14[2], popt_14[3])
+    E2 = ((BM(x1, popt_C_I[0], popt_C_I[1], popt_C_I[2], popt_C_I[3]) - BM(x2, popt_14[0], popt_14[1], popt_14[2], popt_14[3])) / (x1 - x2)) - devBM(x1, popt_C_I[1], popt_C_I[2], popt_C_I[3])
+    return (E1, E2)
+
+x1, x2 =  fsolve(equations, (50, 60))
+print 'x1 = ', x1
+print 'x2 = ', x2
+
 ```
 
 and the following solution is found: 
 
-    [ 62.96385617  62.89017591]
+```
+x1 =  61.445411835
+x2 =  59.9942936344
+```
+Now, the slope of the common tangent can be obtained going to Eqn 1:
 
-which are the values of `x1` and `x2`. Now, the slope of the common tangent can be obtained going to Eqn 1:
+```
+slope_common_tangent = devBM(x1, popt_C_I[1], popt_C_I[2], popt_C_I[3])
+print 'slope_common_tangent = ', slope_common_tangent
+slope_common_tangent_GPa = abs(slope_common_tangent * 4.3597482E+3)
+print ' slope_common_tangent_GPa = ', slope_common_tangent_GPa
+```
+Which yields:
 
-    slope_common_tangent = P(x1, popt_C_I[1], popt_C_I[2], popt_C_I[3])
-    print 'slope_common_tangent = ', slope_common_tangent
-
-this prints:
-
-    slope_common_tangent =  -0.00528373464093
+> slope_common_tangent =  -0.000438955769096
+> slope_common_tangent_GPa =  1.91373662419
 
 We know that the common tangent passes through the `x1` point, and we know its slope. Thus, we can use the following equation:
 
@@ -73,12 +89,6 @@ then the common tangent equation is:
        return BM(x1, popt_C_I[0], popt_C_I[1], popt_C_I[2], popt_C_I[3]) - slope_common_tangent * x1 + slope_common_tangent * x         
 
 If we plot it:
-
-    xp = np.linspace(54, 68, 100)
-    plt.plot(xp, comm_tangent(xp, x1, slope_common_tangent))
-                    
-
-Unfortunately this is not the common tangent:
 
 ![Data flow](https://github.com/DavidCdeB/Common_Tangent/blob/master/Images_for_README_md/common_tang.png)
 
