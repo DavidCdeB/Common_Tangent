@@ -31,7 +31,7 @@ Perhaps in this extrapolated version is easier to see that there is a common tan
 
 ![Data flow](https://github.com/DavidCdeB/Common_Tangent/blob/master/Images_for_README_md/plots_extrap.png)
 
-2) I have solved Eqn 1 and E1n 2 in python (`Common_tangent.py` file): 
+2) I have solved Eqn 1 and Eqn 2 in python (`Common_tangent.py` file): 
 
 ```
 def BM(x, a, b, c, d):
