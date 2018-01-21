@@ -2,7 +2,7 @@
 
 Say we have two curves `f(x)` and `g(x)`:
 
-![Data flow](https://github.com/DavidCdeB/Common_Tangent/blob/master/Images_for_README_md/)
+![Data flow](https://github.com/DavidCdeB/Common_Tangent/blob/master/Images_for_README_md/x1x2.png)
 
 the slope of the common tangent can be obtained as:
 
