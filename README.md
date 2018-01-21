@@ -25,4 +25,10 @@ https://stackoverflow.com/questions/8592200/mathematica-tangent-of-two-curves
 
 where `f(x)` and `g(x)` are cubic? (`1.dat` and `2.dat` Energy vs Volume files provided in this repository). 
 
+It can be seen that you can draw a common tangent with a pen on the screen.
+
+Perhaps this extrapolated version is easier to see that there is a common tangent:
+
+![Data flow](https://github.com/DavidCdeB/Common_Tangent/blob/master/Images_for_README_md/plots_extrap.png)
+
 2) I have implemented this in python (`Common_tangent.py` file) but unfortunately no solution is found
