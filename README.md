@@ -11,8 +11,8 @@ the slope of the common tangent can be obtained as:
 So that in the end we have a system of 2 equations with 2 unknowns:
 
 ```
-f'(x1) = g'(x2) # Eq. 1
-(f(x1) - g(x2)) / (x1 - x2) = f'(x1) # Eq. 2
+f'(x1) = g'(x2) # Eqn. 1
+(f(x1) - g(x2)) / (x1 - x2) = f'(x1) # Eqn. 2
 ```
 We would have to solve this system of 2 non-linear equations and 2 unknowns.
 
@@ -75,7 +75,7 @@ Which yields:
 
 We know that the common tangent passes through the `x1` point, and we know its slope. Thus, we can use the following equation:
 
-    y - y1 = m * (x -x1)
+    y - y1 = m * (x -x1) # Eqn.3 
 
 to sort out the common tangent equation (where `m` is the slope).
 
