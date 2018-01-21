@@ -8,4 +8,8 @@ the slope of the common tangent can be obtained as:
 
 ```slope of common tangent = (f(x1) - g(x2)) / (x1 - x2) = f'(x1) = g'(x2)```
 
-where `x1` and `x2` are the points 
+So that in the end we have a system of 2 equations with 2 unknowns:
+
+```f'(x1) = g'(x2) # Eq. 1
+(f(x1) - g(x2)) / (x1 - x2) = f'(x1) # Eq. 2
+```
