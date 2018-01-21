@@ -80,5 +80,5 @@ If we plot it:
 
 Unfortunately this is not the common tangent:
 
-![Data flow](https://github.com/DavidCdeB/Common_Tangent/blob/master/Images_for_README_md/plots_extrap.png)
+![Data flow](https://github.com/DavidCdeB/Common_Tangent/blob/master/Images_for_README_md/common_tang.png)
 
