@@ -33,7 +33,7 @@ Helmholtz free energy curves corresponding to two different polymorphs:
 
 <!--<img  align="center" src="https://github.com/DavidCdeB/QHA_2D/blob/master/Images_for_README_md/PT_phase_Boundary_edit.png" width="256" height="256" title="Github Logo"> -->
 <p align="center">
-  <img src="https://github.com/DavidCdeB/QHA_2D/blob/master/Images_for_README_md/common_tangent_presentatione.png">
+  <img src="https://github.com/DavidCdeB/Common_Tangent/blob/master/Images_for_README_md/common_tangent_presentatione.png">
 </p>
 
 
