@@ -29,7 +29,7 @@
 <!--<img  align="center" src="https://github.com/DavidCdeB/QHA_2D/blob/master/Images_for_README_md/PT_phase_Boundary_edit.png" width="256" height="256" title="Github Logo"> -->
 
 <p align="center">
-  <img src="https://github.com/DavidCdeB/Common_Tangent/blob/master/TEST/calcite_I_and_II_phase_boundary.pdf">
+  <img src="https://github.com/DavidCdeB/Common_Tangent/blob/master/TEST/calcite_I_and_II_phase_boundary.svg">
 </p>
 
 * The underlying criteria for producing this phase boundary is
