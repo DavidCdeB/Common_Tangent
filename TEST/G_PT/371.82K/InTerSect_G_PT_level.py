@@ -166,4 +166,4 @@ pressures_per_F_unit_14 = P(V_14, V0_14, B0_14, B0_prime_14)
 output_array_2 = np.vstack((E_14, V_14, pressures_per_F_unit_14)).T
 np.savetxt('Volumes_and_pressures_14.dat', output_array_2, header="Energy / FU (a.u.) \t Volume / FU (A^3) \t Pressures (GPa)", fmt="%0.13f")
 
-#plt.show()
+plt.show()

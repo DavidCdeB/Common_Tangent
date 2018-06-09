@@ -66,10 +66,8 @@ def equations(p):
     E2 = ((BM(x1, popt_C_I[0], popt_C_I[1], popt_C_I[2], popt_C_I[3]) - BM(x2, popt_14[0], popt_14[1], popt_14[2], popt_14[3])) / (x1 - x2)) - devBM(x1, popt_C_I[1], popt_C_I[2], popt_C_I[3])
     return (E1, E2)
 
-#x1, x2 =  fsolve(equations, (50, 60))
-#x1, x2 =  fsolve(equations, (60, 64))
-#x1, x2 =  fsolve(equations, (61.5, 62))
-x1, x2 =  fsolve(equations, (61.99, 62))
+#x1, x2 =  fsolve(equations, (61.99, 62))
+x1, x2 =  fsolve(equations, (61.8, 62))
 
 print 'x1 = ', x1
 print 'x2 = ', x2
@@ -166,4 +164,4 @@ pressures_per_F_unit_14 = P(V_14, V0_14, B0_14, B0_prime_14)
 output_array_2 = np.vstack((E_14, V_14, pressures_per_F_unit_14)).T
 np.savetxt('Volumes_and_pressures_14.dat', output_array_2, header="Energy / FU (a.u.) \t Volume / FU (A^3) \t Pressures (GPa)", fmt="%0.13f")
 
-#plt.show()
+plt.show()

@@ -30,11 +30,11 @@ P_theo_analytical_PBE_D3 = P_theo_analytical_PBE_D3[:-1]
 print 'T_theo_analytical_PBE_D3 = ', T_theo_analytical_PBE_D3
 print 'P_theo_analytical_PBE_D3 = ', P_theo_analytical_PBE_D3
 
-p_PBE_D3,  = plt.plot(P_theo_analytical_PBE_D3, T_theo_analytical_PBE_D3, color='lightgreen', ls='--', marker='o')
+p_PBE_D3,  = plt.plot(P_theo_analytical_PBE_D3, T_theo_analytical_PBE_D3, color='green', ls='--', marker='o')
 
 
 fontP = FontProperties()
-fontP.set_size('8')
+fontP.set_size('9')
 
 ax = plt.subplot(111)
 box = ax.get_position()
@@ -44,7 +44,7 @@ ax.legend((\
 p_PBE_D3,\
 ),\
 (\
-"PBE-D3 via common tangent procedure",\
+"PBE-D3",\
 ),\
 prop=fontP, loc='upper left', ncol=2) #, bbox_to_anchor=(1, 0.5))#  loc=4)
 plt.xlabel(r'$P$ (GPa)', fontsize=20)

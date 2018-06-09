@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.6)  9 JUN 2018 16:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.6)  9 JUN 2018 17:02
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1183,7 +1183,7 @@ ype pdf)
  <use ./EL_level/calcite_I_and_II_all_2_summary_better_plot.pdf>
 Package pdftex.def Info: ./EL_level/calcite_I_and_II_all_2_summary_better_plot.
 pdf used on input line 279.
-(pdftex.def)             Requested size: 158.10286pt x 109.93758pt.
+(pdftex.def)             Requested size: 319.4305pt x 222.11765pt.
 
 [4
 
@@ -1196,7 +1196,7 @@ File: ./EL_plus_E0_level/calcite_I_and_II_all_2_summary_better_plot.pdf Graphic
 <use ./EL_plus_E0_level/calcite_I_and_II_all_2_summary_better_plot.pdf>
 Package pdftex.def Info: ./EL_plus_E0_level/calcite_I_and_II_all_2_summary_bett
 er_plot.pdf used on input line 289.
-(pdftex.def)             Requested size: 158.10286pt x 109.79982pt.
+(pdftex.def)             Requested size: 319.4305pt x 221.83665pt.
 
 [5
 
@@ -1209,7 +1209,7 @@ File: ./G_PT/10.00K/calcite_I_and_II_all_2_summary_better_plot.pdf Graphic file
 <use ./G_PT/10.00K/calcite_I_and_II_all_2_summary_better_plot.pdf>
 Package pdftex.def Info: ./G_PT/10.00K/calcite_I_and_II_all_2_summary_better_pl
 ot.pdf used on input line 308.
-(pdftex.def)             Requested size: 158.10286pt x 110.06963pt.
+(pdftex.def)             Requested size: 319.4305pt x 222.38176pt.
  [6
 
  <./G_PT/10.00K/calcite_I_and_II_all_2_summary_better_plot.pdf>]
@@ -1221,7 +1221,7 @@ File: ./G_PT/30.10K/calcite_I_and_II_all_2_summary_better_plot.pdf Graphic file
 <use ./G_PT/30.10K/calcite_I_and_II_all_2_summary_better_plot.pdf>
 Package pdftex.def Info: ./G_PT/30.10K/calcite_I_and_II_all_2_summary_better_pl
 ot.pdf used on input line 308.
-(pdftex.def)             Requested size: 158.10286pt x 110.06963pt.
+(pdftex.def)             Requested size: 319.4305pt x 222.38176pt.
  [7
 
  <./G_PT/30.10K/calcite_I_and_II_all_2_summary_better_plot.pdf>]
@@ -1233,7 +1233,7 @@ File: ./G_PT/50.20K/calcite_I_and_II_all_2_summary_better_plot.pdf Graphic file
 <use ./G_PT/50.20K/calcite_I_and_II_all_2_summary_better_plot.pdf>
 Package pdftex.def Info: ./G_PT/50.20K/calcite_I_and_II_all_2_summary_better_pl
 ot.pdf used on input line 308.
-(pdftex.def)             Requested size: 158.10286pt x 110.06963pt.
+(pdftex.def)             Requested size: 319.4305pt x 222.38176pt.
  [8
 
  <./G_PT/50.20K/calcite_I_and_II_all_2_summary_better_plot.pdf>]
@@ -1245,7 +1245,7 @@ File: ./G_PT/70.30K/calcite_I_and_II_all_2_summary_better_plot.pdf Graphic file
 <use ./G_PT/70.30K/calcite_I_and_II_all_2_summary_better_plot.pdf>
 Package pdftex.def Info: ./G_PT/70.30K/calcite_I_and_II_all_2_summary_better_pl
 ot.pdf used on input line 308.
-(pdftex.def)             Requested size: 158.10286pt x 110.06963pt.
+(pdftex.def)             Requested size: 319.4305pt x 222.38176pt.
  [9
 
  <./G_PT/70.30K/calcite_I_and_II_all_2_summary_better_plot.pdf>]
@@ -1257,7 +1257,7 @@ File: ./G_PT/90.40K/calcite_I_and_II_all_2_summary_better_plot.pdf Graphic file
 <use ./G_PT/90.40K/calcite_I_and_II_all_2_summary_better_plot.pdf>
 Package pdftex.def Info: ./G_PT/90.40K/calcite_I_and_II_all_2_summary_better_pl
 ot.pdf used on input line 308.
-(pdftex.def)             Requested size: 158.10286pt x 110.06963pt.
+(pdftex.def)             Requested size: 319.4305pt x 222.38176pt.
  [10
 
  <./G_PT/90.40K/calcite_I_and_II_all_2_summary_better_plot.pdf>]
@@ -1269,7 +1269,7 @@ e (type pdf)
 <use ./G_PT/110.51K/calcite_I_and_II_all_2_summary_better_plot.pdf>
 Package pdftex.def Info: ./G_PT/110.51K/calcite_I_and_II_all_2_summary_better_p
 lot.pdf used on input line 308.
-(pdftex.def)             Requested size: 158.10286pt x 110.06963pt.
+(pdftex.def)             Requested size: 319.4305pt x 222.38176pt.
  [11
 
  <./G_PT/110.51K/calcite_I_and_II_all_2_summary_better_plot.pdf>]
@@ -1281,7 +1281,7 @@ e (type pdf)
 <use ./G_PT/130.61K/calcite_I_and_II_all_2_summary_better_plot.pdf>
 Package pdftex.def Info: ./G_PT/130.61K/calcite_I_and_II_all_2_summary_better_p
 lot.pdf used on input line 308.
-(pdftex.def)             Requested size: 158.10286pt x 110.06963pt.
+(pdftex.def)             Requested size: 319.4305pt x 222.38176pt.
  [12
 
  <./G_PT/130.61K/calcite_I_and_II_all_2_summary_better_plot.pdf>]
@@ -1293,7 +1293,7 @@ e (type pdf)
 <use ./G_PT/150.71K/calcite_I_and_II_all_2_summary_better_plot.pdf>
 Package pdftex.def Info: ./G_PT/150.71K/calcite_I_and_II_all_2_summary_better_p
 lot.pdf used on input line 308.
-(pdftex.def)             Requested size: 158.10286pt x 110.06963pt.
+(pdftex.def)             Requested size: 319.4305pt x 222.38176pt.
  [13
 
  <./G_PT/150.71K/calcite_I_and_II_all_2_summary_better_plot.pdf>]
@@ -1305,7 +1305,7 @@ e (type pdf)
 <use ./G_PT/170.81K/calcite_I_and_II_all_2_summary_better_plot.pdf>
 Package pdftex.def Info: ./G_PT/170.81K/calcite_I_and_II_all_2_summary_better_p
 lot.pdf used on input line 308.
-(pdftex.def)             Requested size: 158.10286pt x 110.06963pt.
+(pdftex.def)             Requested size: 319.4305pt x 222.38176pt.
  [14
 
  <./G_PT/170.81K/calcite_I_and_II_all_2_summary_better_plot.pdf>]
@@ -1317,7 +1317,7 @@ e (type pdf)
 <use ./G_PT/190.91K/calcite_I_and_II_all_2_summary_better_plot.pdf>
 Package pdftex.def Info: ./G_PT/190.91K/calcite_I_and_II_all_2_summary_better_p
 lot.pdf used on input line 308.
-(pdftex.def)             Requested size: 158.10286pt x 110.06963pt.
+(pdftex.def)             Requested size: 319.4305pt x 222.38176pt.
  [15
 
  <./G_PT/190.91K/calcite_I_and_II_all_2_summary_better_plot.pdf>]
@@ -1329,7 +1329,7 @@ e (type pdf)
 <use ./G_PT/211.01K/calcite_I_and_II_all_2_summary_better_plot.pdf>
 Package pdftex.def Info: ./G_PT/211.01K/calcite_I_and_II_all_2_summary_better_p
 lot.pdf used on input line 308.
-(pdftex.def)             Requested size: 158.10286pt x 110.06963pt.
+(pdftex.def)             Requested size: 319.4305pt x 222.38176pt.
  [16
 
  <./G_PT/211.01K/calcite_I_and_II_all_2_summary_better_plot.pdf>]
@@ -1341,7 +1341,7 @@ e (type pdf)
 <use ./G_PT/231.11K/calcite_I_and_II_all_2_summary_better_plot.pdf>
 Package pdftex.def Info: ./G_PT/231.11K/calcite_I_and_II_all_2_summary_better_p
 lot.pdf used on input line 308.
-(pdftex.def)             Requested size: 158.10286pt x 110.06963pt.
+(pdftex.def)             Requested size: 319.4305pt x 222.38176pt.
  [17
 
  <./G_PT/231.11K/calcite_I_and_II_all_2_summary_better_plot.pdf>]
@@ -1353,7 +1353,7 @@ e (type pdf)
 <use ./G_PT/251.21K/calcite_I_and_II_all_2_summary_better_plot.pdf>
 Package pdftex.def Info: ./G_PT/251.21K/calcite_I_and_II_all_2_summary_better_p
 lot.pdf used on input line 308.
-(pdftex.def)             Requested size: 158.10286pt x 110.06963pt.
+(pdftex.def)             Requested size: 319.4305pt x 222.38176pt.
  [18
 
  <./G_PT/251.21K/calcite_I_and_II_all_2_summary_better_plot.pdf>]
@@ -1365,7 +1365,7 @@ e (type pdf)
 <use ./G_PT/271.31K/calcite_I_and_II_all_2_summary_better_plot.pdf>
 Package pdftex.def Info: ./G_PT/271.31K/calcite_I_and_II_all_2_summary_better_p
 lot.pdf used on input line 308.
-(pdftex.def)             Requested size: 158.10286pt x 110.06963pt.
+(pdftex.def)             Requested size: 319.4305pt x 222.38176pt.
  [19
 
  <./G_PT/271.31K/calcite_I_and_II_all_2_summary_better_plot.pdf>]
@@ -1377,7 +1377,7 @@ e (type pdf)
 <use ./G_PT/291.41K/calcite_I_and_II_all_2_summary_better_plot.pdf>
 Package pdftex.def Info: ./G_PT/291.41K/calcite_I_and_II_all_2_summary_better_p
 lot.pdf used on input line 308.
-(pdftex.def)             Requested size: 158.10286pt x 110.06963pt.
+(pdftex.def)             Requested size: 319.4305pt x 222.38176pt.
  [20
 
  <./G_PT/291.41K/calcite_I_and_II_all_2_summary_better_plot.pdf>]
@@ -1389,7 +1389,7 @@ e (type pdf)
 <use ./G_PT/311.52K/calcite_I_and_II_all_2_summary_better_plot.pdf>
 Package pdftex.def Info: ./G_PT/311.52K/calcite_I_and_II_all_2_summary_better_p
 lot.pdf used on input line 308.
-(pdftex.def)             Requested size: 158.10286pt x 110.06963pt.
+(pdftex.def)             Requested size: 319.4305pt x 222.38176pt.
  [21
 
  <./G_PT/311.52K/calcite_I_and_II_all_2_summary_better_plot.pdf>]
@@ -1401,7 +1401,7 @@ e (type pdf)
 <use ./G_PT/331.62K/calcite_I_and_II_all_2_summary_better_plot.pdf>
 Package pdftex.def Info: ./G_PT/331.62K/calcite_I_and_II_all_2_summary_better_p
 lot.pdf used on input line 308.
-(pdftex.def)             Requested size: 158.10286pt x 110.06963pt.
+(pdftex.def)             Requested size: 319.4305pt x 222.38176pt.
  [22
 
  <./G_PT/331.62K/calcite_I_and_II_all_2_summary_better_plot.pdf>]
@@ -1413,7 +1413,7 @@ e (type pdf)
 <use ./G_PT/351.72K/calcite_I_and_II_all_2_summary_better_plot.pdf>
 Package pdftex.def Info: ./G_PT/351.72K/calcite_I_and_II_all_2_summary_better_p
 lot.pdf used on input line 308.
-(pdftex.def)             Requested size: 158.10286pt x 110.06963pt.
+(pdftex.def)             Requested size: 319.4305pt x 222.38176pt.
  [23
 
  <./G_PT/351.72K/calcite_I_and_II_all_2_summary_better_plot.pdf>] (./main.toc) 
@@ -1467,7 +1467,7 @@ Here is how much of TeX's memory you used:
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></u
 sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></u
 sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb>
-Output written on main.pdf (25 pages, 513743 bytes).
+Output written on main.pdf (25 pages, 513899 bytes).
 PDF statistics:
  1850 PDF objects out of 2073 (max. 8388607)
  374 compressed objects within 4 object streams
