@@ -18,33 +18,32 @@
 <a name="example"></a>
 ## What is the QHA program ?
 
- `Common_Tangent` is a program for computational chemistry and physics that
-performs the quasi-harmonic approximation reading the frequencies at each volume calculated with [CRYSTAL](http://www.crystal.unito.it/index.php).
+* `Common_Tangent` is a program for computational chemistry and physics.
 
 * Extracts all the frequencies within all the **k** points in the supercell for a given volume.
 
 * Calculates the Helmholtz free energy.
 
-* Evaluates the common tangent between two 
-Helmholtz free energy curves corresponding to two different polymorphs: 
-<a href="https://www.codecogs.com/eqnedit.php?latex=F^{I}(V;T)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F^{I}(V;T)" title="F^{I}(V;T)" /></a> and <a href="https://www.codecogs.com/eqnedit.php?latex=F^{II}(V;T)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F^{II}(V;T)" title="F^{II}(V;T)" /></a>
-
 * Outputs the pressure-temperature phase diagram for the thermodynamic phase stability of both solid phases:
 
 <!--<img  align="center" src="https://github.com/DavidCdeB/QHA_2D/blob/master/Images_for_README_md/PT_phase_Boundary_edit.png" width="256" height="256" title="Github Logo"> -->
-<p align="center">
-  <img src="https://github.com/DavidCdeB/Common_Tangent/blob/master/Images_for_README_md/common_tangent_presentatione.png">
-</p>
 
+<p align="center">
+  <img src="https://github.com/DavidCdeB/Common_Tangent/blob/master/TEST/calcite_I_and_II_phase_boundary.pdf">
+</p>
 
 * The underlying criteria for producing this phase boundary is
 by evaluating common tangent between two Hemholtz free energy curves
 <a href="https://www.codecogs.com/eqnedit.php?latex=F^{I}(V;T)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F^{I}(V;T)" title="F^{I}(V;T)" /></a> and <a href="https://www.codecogs.com/eqnedit.php?latex=F^{II}(V;T)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F^{II}(V;T)" title="F^{II}(V;T)" /></a>
 
+<p align="center">
+  <img src="https://github.com/DavidCdeB/Common_Tangent/blob/master/Images_for_README_md/common_tangent_presentatione.png">
+</p>
+
 
 # Statement of the problem
 
-Say we have two curves `f(x)` and `g(x)`:
+Say we have two curves `f1(x)` and `f2(x)`:
 
 the slope of the common tangent can be obtained as:
 
