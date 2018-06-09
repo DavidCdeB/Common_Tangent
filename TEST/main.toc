@@ -1,0 +1,4 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {english}
+\beamer@sectionintoc {1}{$E(V)$, $E(V) + E_{ZP}$, $F(V; T)$ and pressure of transition. Thermal evolution}{3}{0}{1}
+\beamer@sectionintoc {2}{Phase Boundary}{24}{0}{2}

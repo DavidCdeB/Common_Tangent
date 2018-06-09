@@ -1,3 +1,48 @@
+#
+
+# Table of Contents
+
+<!-- - [What is the QHA program ?](#WhatisQHA)
+- [What is the quasi-harmonic approximation ?](#Whatisquasi) -->
+1. [What is the `Common_Tangent` program ?](#example)
+2. [What is the quasi-harmonic approximation ?](#example2)
+3. [Power of the quasi-harmonic approximation](#example3)
+4. [Why is `QHA_2D` useful ?](#example4)
+5. [Files needed for running `QHA_2D`](#example5)
+6. [How to run `QHA_2D`](#example6)
+7. [Test](#example7)
+8. [How to cite](#example8)
+9. [Contributing](#example9)
+10. [References](#example10)
+
+
+<a name="example"></a>
+## What is the QHA program ?
+
+ `Common_Tangent` is a program for computational chemistry and physics that
+performs the quasi-harmonic approximation reading the frequencies at each volume calculated with [CRYSTAL](http://www.crystal.unito.it/index.php).
+
+* Extracts all the frequencies within all the **k** points in the supercell for a given volume.
+
+* Calculates the Helmholtz free energy.
+
+* Evaluates the common tangent between two 
+Helmholtz free energy curves corresponding to two different polymorphs: 
+<a href="https://www.codecogs.com/eqnedit.php?latex=F^{I}(V;T)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F^{I}(V;T)" title="F^{I}(V;T)" /></a> and <a href="https://www.codecogs.com/eqnedit.php?latex=F^{II}(V;T)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F^{II}(V;T)" title="F^{II}(V;T)" /></a>
+
+* Outputs the pressure-temperature phase diagram for the thermodynamic phase stability of both solid phases:
+
+<!--<img  align="center" src="https://github.com/DavidCdeB/QHA_2D/blob/master/Images_for_README_md/PT_phase_Boundary_edit.png" width="256" height="256" title="Github Logo"> -->
+<p align="center">
+  <img width="256" height="256" src="https://github.com/DavidCdeB/QHA_2D/blob/master/Images_for_README_md/PT_phase_Boundary.svg">
+</p>
+
+
+* The underlying criteria for producing this phase boundary is
+by evaluating common tangent between two Hemholtz free energy curves
+<a href="https://www.codecogs.com/eqnedit.php?latex=F^{I}(V;T)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F^{I}(V;T)" title="F^{I}(V;T)" /></a> and <a href="https://www.codecogs.com/eqnedit.php?latex=F^{II}(V;T)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F^{II}(V;T)" title="F^{II}(V;T)" /></a>
+
+
 # Statement of the problem
 
 Say we have two curves `f(x)` and `g(x)`:
