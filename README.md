@@ -13,7 +13,6 @@
 7. [Test](#example7)
 8. [How to cite](#example8)
 9. [Contributing](#example9)
-10. [References](#example10)
 
 
 <a name="example"></a>
@@ -34,7 +33,7 @@ Helmholtz free energy curves corresponding to two different polymorphs:
 
 <!--<img  align="center" src="https://github.com/DavidCdeB/QHA_2D/blob/master/Images_for_README_md/PT_phase_Boundary_edit.png" width="256" height="256" title="Github Logo"> -->
 <p align="center">
-  <img width="256" height="256" src="https://github.com/DavidCdeB/QHA_2D/blob/master/Images_for_README_md/PT_phase_Boundary.svg">
+  <img src="https://github.com/DavidCdeB/QHA_2D/blob/master/Images_for_README_md/common_tangent_presentatione.png">
 </p>
 
 
