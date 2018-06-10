@@ -2,11 +2,9 @@
 
 # Table of Contents
 
-<!-- - [What is the QHA program ?](#WhatisQHA)
-- [What is the quasi-harmonic approximation ?](#Whatisquasi) -->
 1. [What is the `Common_Tangent` program ?](#example)
 2. [Why is `Common_Tangent` useful ?](#example2)
-3. [Files needed for running `QHA_2D`](#example3)
+3. [Files needed for running `Common_Tangent`](#example3)
 6. [How to run `Common_Tangent`](#example4)
 7. [Test](#example5)
 8. [How to cite](#example6)
@@ -139,7 +137,7 @@ print comm_tangent(x, x1, slope_common_tangent)
 > Common tangent equation: -0.000438955769095521 x - 941.227540709767
 
 <a name="example3"></a>
-## Files needed for running `common_tangent`
+## Files needed for running `Common_Tangent`
 
 * Say you want to compute the pressure-temperature phase diagram of two
 solid phases I and II.
@@ -150,10 +148,10 @@ These frequencies calculations can be either in the Gamma point or at finite **k
 
 
 <a name="example4"></a>
-## How to run `common_tangent`
+## How to run `Common_Tangent`
 
 * Get the code: `git clone https://github.com/DavidCdeB/common_tangent`
-* Create the `Files_Outputs` folder inside the `QHA_2D` folder that has just been cloned: `cd ./QHA_2D && mkdir Files_Outputs`
+* Create the `Files_Outputs` folder inside the `Common_Tangent` folder that has just been cloned: `cd ./Common_Tangent && mkdir Files_Outputs`
 * Create the folders that will contain the constant-volume frequency outputs for each phase: `mkdir Calcite_I && mkdir Calcite II`
 * Copy all the frequencies outputs for each volume, for each phase, to the folders `Calcite_I` and `Calcite_II`. For example, `Calcite_I` folder will contain the frequency output for each `j`-th volume for the Calcite I phase.
 * Remember that name of all these frequency outputs have to end as `*.out`
@@ -182,7 +180,7 @@ Carrasco-Busturia, D. et al "Computed phase stability and phase transition mecha
 <a name="example9"></a>
 ## Contributing
 
-`common_tangent` is free software released under the Gnu Public Licence version 3.
+`Common_Tangent` is free software released under the Gnu Public Licence version 3.
 All contributions to improve this code are more than welcome.
 
 * Have a look at GitHub's ["How to contribute"](https://guides.github.com/activities/contributing-to-open-source/#contributing).
