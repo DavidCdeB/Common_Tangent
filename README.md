@@ -45,7 +45,10 @@ by evaluating common tangent between two Hemholtz free energy curves
 # Statement of the problem
 
 Please have a look at the [pdf](https://github.com/DavidCdeB/Common_Tangent/blob/master/TEST/example_image/lab_report_1.pdf) in this repository, where you can dind a detailed explanation.
+
+<!--
 As a brief summary:
+
 Say we have two curves `f1(x)` and `f2(x)`:
 
 the slope of the common tangent can be obtained as:
@@ -66,13 +69,13 @@ f1'(x1) = f2'(x2) # Eqn. 1
 ```
 We would have to solve this system of 2 non-linear equations and 2 unknowns.
 
-<!--
 The 1st answer in the following link solves this on Mathematica, for the case of `f(x)` and `g(x)` being quadratic (which is not our case):
 https://stackoverflow.com/questions/8592200/mathematica-tangent-of-two-curves -->
 
-In the code, Eqn 1 and Eqn 2 are solved in python:
+In the code, Eqn (6) and Eqn (7) in the pdf are solved in python, as
+`E1` and `E2` respectively:
 
-```
+```python
 def BM(x, a, b, c, d):
          return  a + b*x + c*x**2 + d*x**3
 
@@ -94,13 +97,13 @@ print 'x2 = ', x2
 
 and the following solution is found for the case of zero Kelvin:
 
-```
+```python
 x1 =  61.445411835
 x2 =  59.9942936344
 ```
 Now, the slope of the common tangent can be obtained going to Eqn 1:
 
-```
+```python
 slope_common_tangent = devBM(x1, popt_C_I[1], popt_C_I[2], popt_C_I[3])
 print 'slope_common_tangent = ', slope_common_tangent
 slope_common_tangent_GPa = abs(slope_common_tangent * 4.3597482E+3)
@@ -112,7 +115,7 @@ Which yields:
 
 > slope_common_tangent_GPa =  1.91373662419
 
-We know that the common tangent passes through the `x1` point, and we know its slope. Thus, we can use the following equation:
+We know that the common tangent passes through the `x1` point, and we know its slope. Thus, we can use Eq. (8) in the pdf:
 
     y - y1 = m * (x -x1) # Eqn.3 
 
@@ -125,11 +128,11 @@ Since:
 
 then the common tangent equation is:
 
-```
+```python
 def comm_tangent(x, x1, slope_common_tangent):
    return BM(x1, popt_C_I[0], popt_C_I[1], popt_C_I[2], popt_C_I[3]) - slope_common_tangent * x1 + slope_common_tangent * x
 ```
-```
+```python
 x = var('x')
 print comm_tangent(x, x1, slope_common_tangent)
 ```
