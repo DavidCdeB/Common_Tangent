@@ -5,8 +5,6 @@
 <!-- - [What is the QHA program ?](#WhatisQHA)
 - [What is the quasi-harmonic approximation ?](#Whatisquasi) -->
 1. [What is the `Common_Tangent` program ?](#example)
-2. [What is the quasi-harmonic approximation ?](#example2)
-3. [Power of the quasi-harmonic approximation](#example3)
 4. [Why is `QHA_2D` useful ?](#example4)
 5. [Files needed for running `QHA_2D`](#example5)
 6. [How to run `QHA_2D`](#example6)
@@ -16,7 +14,7 @@
 
 
 <a name="example"></a>
-## What is the QHA program ?
+## What is the `Common_Tangent` program ?
 
 * `Common_Tangent` is a program for computational chemistry and physics.
 
@@ -24,7 +22,10 @@
 
 * Calculates the Helmholtz free energy.
 
-* Outputs the pressure-temperature phase diagram for the thermodynamic phase stability of both solid phases:
+<a name="example2"></a>
+## Why is `Common_Tangent` useful ?
+
+* This program is useful becasue it outputs the pressure-temperature phase diagram for the thermodynamic phase stability of both solid phases:
 
 <!--<img  align="center" src="https://github.com/DavidCdeB/QHA_2D/blob/master/Images_for_README_md/PT_phase_Boundary_edit.png" width="256" height="256" title="Github Logo"> -->
 
@@ -43,11 +44,19 @@ by evaluating common tangent between two Hemholtz free energy curves
 
 # Statement of the problem
 
+Please have a look at the [pdf](https://github.com/DavidCdeB/Common_Tangent/blob/master/TEST/example_image/lab_report_1.pdf) in this repository, where you can dind a detailed explanation.
+As a brief summary:
 Say we have two curves `f1(x)` and `f2(x)`:
 
 the slope of the common tangent can be obtained as:
 
 ```slope of common tangent = (f1(x1) - f2(x2)) / (x1 - x2) = f1'(x1) = f2'(x2)```
+
+```python
+s = "Python syntax highlighting"
+print s
+```
+
 
 So that in the end we have a system of 2 equations with 2 unknowns:
 
@@ -61,7 +70,7 @@ We would have to solve this system of 2 non-linear equations and 2 unknowns.
 The 1st answer in the following link solves this on Mathematica, for the case of `f(x)` and `g(x)` being quadratic (which is not our case):
 https://stackoverflow.com/questions/8592200/mathematica-tangent-of-two-curves -->
 
-2) I have solved Eqn 1 and Eqn 2 in python (`Common_tangent.py` file): 
+In the code, Eqn 1 and Eqn 2 are solved in python:
 
 ```
 def BM(x, a, b, c, d):
@@ -83,7 +92,7 @@ print 'x2 = ', x2
 
 ```
 
-and the following solution is found: 
+and the following solution is found for the case of zero Kelvin:
 
 ```
 x1 =  61.445411835
