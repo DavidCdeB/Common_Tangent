@@ -5,12 +5,12 @@
 <!-- - [What is the QHA program ?](#WhatisQHA)
 - [What is the quasi-harmonic approximation ?](#Whatisquasi) -->
 1. [What is the `Common_Tangent` program ?](#example)
-4. [Why is `QHA_2D` useful ?](#example4)
-5. [Files needed for running `QHA_2D`](#example5)
-6. [How to run `QHA_2D`](#example6)
-7. [Test](#example7)
-8. [How to cite](#example8)
-9. [Contributing](#example9)
+2. [Why is `Common_Tangent` useful ?](#example2)
+3. [Files needed for running `QHA_2D`](#example3)
+6. [How to run `Common_Tangent`](#example4)
+7. [Test](#example5)
+8. [How to cite](#example6)
+9. [Contributing](#example7)
 
 
 <a name="example"></a>
@@ -117,7 +117,7 @@ Which yields:
 
 We know that the common tangent passes through the `x1` point, and we know its slope. Thus, we can use Eq. (8) in the pdf:
 
-    y - y1 = m * (x -x1) # Eqn.3 
+    y - y1 = m * (x -x1) # Eqn. 8 in the pdf 
 
 to sort out the common tangent equation (where `m` is the slope).
 
@@ -136,5 +136,62 @@ def comm_tangent(x, x1, slope_common_tangent):
 x = var('x')
 print comm_tangent(x, x1, slope_common_tangent)
 ```
-> Common tangent equation: -0.000438955769095521*x - 941.227540709767
+> Common tangent equation: -0.000438955769095521 x - 941.227540709767
+
+<a name="example3"></a>
+## Files needed for running `common_tangent`
+
+* Say you want to compute the pressure-temperature phase diagram of two
+solid phases I and II.
+ `common_tangent` requires the frequency calculation outputs at each volume, for each of the two phases.
+These frequencies calculations can be either in the Gamma point or at finite **k** points.
+
+* The name of all these frequency outputs have to end as `*.out`
+
+
+<a name="example4"></a>
+## How to run `common_tangent`
+
+* Get the code: `git clone https://github.com/DavidCdeB/common_tangent`
+* Create the `Files_Outputs` folder inside the `QHA_2D` folder that has just been cloned: `cd ./QHA_2D && mkdir Files_Outputs`
+* Create the folders that will contain the constant-volume frequency outputs for each phase: `mkdir Calcite_I && mkdir Calcite II`
+* Copy all the frequencies outputs for each volume, for each phase, to the folders `Calcite_I` and `Calcite_II`. For example, `Calcite_I` folder will contain the frequency output for each `j`-th volume for the Calcite I phase.
+* Remember that name of all these frequency outputs have to end as `*.out`
+* The file system at this point looks like the following:
+
+<p align="left">
+  <img width="256" height="256" src="https://github.com/DavidCdeB/QHA_2D/blob/master/Images_for_README_md/file_system.svg">
+</p>
+
+* Run `./boundary_1_node.sh`
+
+<a name="example7"></a>
+## Test
+
+Under the `TEST` folder, you will find all the programs
+needed, together with a `Files_Outputs` folder with the frequency outputs of two phases: calcite I and calcite II.
+If you run the program, you will obtain the `main.pdf` with all the plots needed.
+
+<a name="example8"></a>
+## How to cite
+
+Please cite the following reference when using this code:
+
+Carrasco-Busturia, D. et al "Computed phase stability and phase transition mechanisms in CaCO3 at finite temperature and pressure" _In progress_
+
+<a name="example9"></a>
+## Contributing
+
+`common_tangent` is free software released under the Gnu Public Licence version 3.
+All contributions to improve this code are more than welcome.
+
+* Have a look at GitHub's ["How to contribute"](https://guides.github.com/activities/contributing-to-open-source/#contributing).
+
+* If you are familiar with `git`: fork this repository and submit a pull request.
+
+* If you are not familiar with `git`:
+
+    * If something should be improved, open an issue here on GitHub
+    * If you think a new feature would be interesting, open an issue
+    * If you need a particular feature for your project contact me directly.
 
