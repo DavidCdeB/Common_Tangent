@@ -158,7 +158,7 @@ These frequencies calculations can be either in the Gamma point or at finite **k
 * The file system at this point looks like the following:
 
 <p align="left">
-  <img width="256" height="256" src="https://github.com/DavidCdeB/QHA_2D/blob/master/Images_for_README_md/file_system.svg">
+  <img width="256" height="256" src="https://github.com/DavidCdeB/Common_Tangent/blob/master/Images_for_README_md/file_system.svg">
 </p>
 
 * Run `./boundary_1_node.sh`
