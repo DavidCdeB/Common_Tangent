@@ -163,6 +163,7 @@ These frequencies calculations can be either in the Gamma point or at finite **k
 
 * Run `./boundary_1_node.sh`
 
+* `commonTangentF_allTemperatures.m` and `commonTangent.m` contain the same algorithm in Mathematica.
 <a name="example7"></a>
 ## Test
 
