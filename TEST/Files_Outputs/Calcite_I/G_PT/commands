@@ -1,0 +1,100 @@
+  687  history
+  688  echo $names
+  689* head F_vs_V_110.51K/
+  690  head -n -1 F_vs_V_10.00K/F_vs_V_10.00K.dat 
+  691  tail -n -1 F_vs_V_10.00K/F_vs_V_10.00K.dat 
+  692  tail -n -10 F_vs_V_10.00K/F_vs_V_10.00K.dat 
+  693  tail -n -12 F_vs_V_10.00K/F_vs_V_10.00K.dat 
+  694  tail -n -11 F_vs_V_10.00K/F_vs_V_10.00K.dat 
+  695* for i in $names; do tail -n -11 $i/$i.dat ; done
+  696  history
+  697  names=$(for i in {0..25};do num=$(echo 10.00+20.1*$i | bc -l); echo "F_vs_V_"$num"K"; done)
+  698  names=$(for i in {0..25};do num=$(echo 10.00+20.11*$i | bc -l); echo "F_vs_V_"$num"K"; done)
+  699  echo $names
+  700  names=$(for i in {0..25};do num=$(echo 10.00+20.101*$i | bc -l); echo "F_vs_V_"$num"K"; done)
+  701  echo $names
+  702  names=$(for i in {0..25};do num=$(echo "scale=2; 10.00+20.101*$i" | bc -l); echo "F_vs_V_"$num"K"; done)
+  703  echo $names
+  704  names=$(for i in {0..25};do num=$(echo "scale=1; 10.00+20.101*$i" | bc -l); echo "F_vs_V_"$num"K"; done)
+  705  echo $names
+  706  names=$(for i in {0..25};do num=$(echo "scale=1; 10.00+20.101*$i" | bc); echo "F_vs_V_"$num"K"; done)
+  707  echo $names
+  708  echo "scale=1; 10.00+20.101*2" | bc
+  709  echo "scale=1; 10.00+20.101*2" | bc -l
+  710  echo "scale=5; 10.00+20.101*2" | bc -l
+  711  echo scale=5; 10.00+20.101*2 | bc -l
+  712  echo 'scale=5; 10.00+20.101*2' | bc -l
+  713  echo 'scale=5; 20.101*2' | bc -l
+  714  echo 'scale=4; 20.101*2' | bc -l
+  715  echo "scale=4; 20.101*2" | bc -l
+  716  echo "scale=4; 20.101*2" | bc -l
+  717  10.00K
+  718  30.10K
+  719  50.20K
+  720  70.30K
+  721  90.40K
+  722  110.51K
+  723  130.61K
+  724  150.71K
+  725  170.81K
+  726  190.91K
+  727  211.01K
+  728  231.11K
+  729  251.21K
+  730  271.31K
+  731  291.41K
+  732  311.52K
+  733  331.62K
+  734  351.72K
+  735  371.82K
+  736  391.92K
+  737  412.02K
+  738  432.12K
+  739  452.22K
+  740  472.32K
+  741  492.42K
+  742  512.53K
+  743  532.63K
+  744  552.73K
+  745  572.83K
+  746  592.93K
+  747  vi tmp
+  748  cat tmp 
+  749  list=$(cat tmp)
+  750  echo $list
+  751  for i in $list; do echo F_vs_V_$iK ; done
+  752  for i in $list; do echo "F_vs_V_"$i"K" ; done
+  753  for i in $list; do echo "F_vs_V_"$i ; done
+  754  cat tmp 
+  755  history
+  756  list=$(cat tmp)
+  757  mv tmp temperatures
+  758  list=$(cat temperatures)
+  759  for i in $list; do echo "F_vs_V_"$i ; done
+  760  for i in $list; do echo "F_vs_V_"$i"K" ; done
+  761  for i in $list; do echo "F_vs_V_"$i"K" ; done
+  762  for i in $list; do name=$(echo "F_vs_V_"$i"K"); echo $name ; done
+  763  for i in $list; do name=$(echo "F_vs_V_"$i"K"); head $name/$name.dat ; done
+  764  for i in $list; do echo "F_vs_V_"$i ; done
+  765  for i in $list; do name=$(echo "F_vs_V_"$i"K"); head $name/$name.dat ; done
+  766  for i in $list; do name=$(echo "F_vs_V_"$i); head $name/$name.dat ; done
+  767  for i in $list; do name=$(echo "F_vs_V_"$i); tail -n 10 $name/$name.dat ; done
+  768  for i in $list; do name=$(echo "F_vs_V_"$i); tail -n 11 $name/$name.dat ; done
+  769  for i in $list; do name=$(echo "F_vs_V_"$i); tail -n 12 $name/$name.dat ; done
+  770  for i in $list; do name=$(echo "F_vs_V_"$i); tail -n 11 $name/$name.dat ; done
+  771  for i in $list; do name=$(echo "F_vs_V_"$i); tail -n 11 $name/$name.dat ; done > vol_Free_allTemps_ordered.dat
+  772  cd ../../Calcite_II/G_PT/
+  773  la
+  774  for i in $list; do name=$(echo "F_vs_V_"$i); tail -n 11 $name/$name.dat ; done > vol_Free_allTemps_ordered_II.dat
+  775  head vol_Free_allTemps_ordered_II.dat 
+  776  cat F_vs_V_10.00K/F_vs_V_10.00K.dat 
+  777  for i in $list; do name=$(echo "F_vs_V_"$i); tail -n 9 $name/$name.dat ; done > vol_Free_allTemps_ordered_II.dat
+  778  head vol_Free_allTemps_ordered_II.dat 
+  779  cd ../../Calcite_I
+  780  la
+  781  cd G_PT/
+  782  la
+  783  mv vol_Free_allTemps_ordered.dat vol_Free_allTemps_ordered_I.dat 
+  784  history
+  785  history | tail -n 100
+  786  history | tail -n 100 > commands
