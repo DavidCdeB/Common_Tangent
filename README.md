@@ -176,7 +176,7 @@ If you run the program, you will obtain the `main.pdf` with all the plots needed
 
 Please cite the following reference when using this code:
 
-Carrasco-Busturia, D. et al "Computed phase stability and phase transition mechanisms in CaCO3 at finite temperature and pressure" _In progress_
+Carrasco-Busturia, D., Harrison, N.M. _et al_ "Computed phase stability and phase transition mechanisms in CaCO3 at finite temperature and pressure" _In progress_
 
 <a name="example9"></a>
 ## Contributing
