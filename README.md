@@ -164,21 +164,39 @@ These frequencies calculations can be either in the Gamma point or at finite **k
 * Run `./boundary_1_node.sh`
 
 * `commonTangentF_allTemperatures.m` and `commonTangent.m` contain the same algorithm in Mathematica.
-<a name="example7"></a>
+<a name="example5"></a>
 ## Test
 
 Under the `TEST` folder, you will find all the programs
 needed, together with a `Files_Outputs` folder with the frequency outputs of two phases: calcite I and calcite II.
 If you run the program, you will obtain the `main.pdf` with all the plots needed.
 
-<a name="example8"></a>
+<a name="example6"></a>
 ## How to cite
 
 Please cite the following reference when using this code:
 
-Carrasco-Busturia, D., Harrison, N.M. _et al_ "Computed phase stability and phase transition mechanisms in CaCO3 at finite temperature and pressure" _In progress_
+D. Carrasco-Busturia, "The temperature - pressure phase diagram of the calcite I - calcite II
+phase transition: A first-principles investigation", Journal of Physics and Chemistry of Solids, vol. 154,
+p. 110 045, 2021. DOI: https://doi.org/10.1016/j.jpcs.2021.110045.
 
-<a name="example9"></a>
+Here the bibtex:
+
+```
+@article{CARRASCOBUSTURIA2021110045,                                                                        
+title = {The temperature - pressure phase diagram of the calcite {I} - calcite {II} phase transition: A first-principles investigation},
+journal = {Journal of Physics and Chemistry of Solids},
+volume = {154},
+pages = {110045},
+year = {2021},
+issn = {0022-3697},
+doi = {https://doi.org/10.1016/j.jpcs.2021.110045},
+url = {https://www.sciencedirect.com/science/article/pii/S0022369721001116},
+author = {David Carrasco-Busturia}
+}
+```
+
+<a name="example7"></a>
 ## Contributing
 
 `Common_Tangent` is free software released under the Gnu Public Licence version 3.
